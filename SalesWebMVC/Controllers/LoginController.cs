@@ -9,7 +9,7 @@ namespace SalesWebMVC.Controllers
         {
             Login login = new();
 
-            login.email = "dantaserley@gmail.com";
+            login.email = "erleydantas@gmail.com";
             login.senha = "Soulevans1#";
 
             return View(login);
