@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SalesW.Models;
+using SalesW.Models.ViewModels;
 using System.Diagnostics;
 
 namespace SalesW.Controllers
@@ -20,6 +21,9 @@ namespace SalesW.Controllers
 
         public IActionResult Privacy()
         {
+
+            ViewData["Message"] = "Your Aplication description page."; 
+
             return View();
         }
 
