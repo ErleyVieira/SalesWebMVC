@@ -14,6 +14,8 @@ namespace SalesW.Data
         {
         }
 
-        public DbSet<SalesW.Models.Department> Department { get; set; } = default!;
+        public DbSet<Department> Department { get; set; } = default!;
+        public DbSet<SalesRecord> SalesRecords { get; set; }
+        public DbSet<Seller> Seller { get; set; }
     }
 }
