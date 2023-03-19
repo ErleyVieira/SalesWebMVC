@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using SalesW.Data;
+using SalesW.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,9 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<SalesWContext>(options =>
     options.UseSqlServer("Data Source=DESKTOP-TEKGEDL;Initial Catalog=Fb_servicesystem;Integrated Security=True"));
+
+
+builder.Services.AddScoped<SellerService>();
 
 var app = builder.Build();
 
